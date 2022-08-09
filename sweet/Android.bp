@@ -1538,8 +1538,6 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
 	name: "libFaceDetectpp-0.5.2",
-	name: "libMegviiFacepp-0.5.2_vendor",
-	stem: "libMegviiFacepp-0.5.2",
 	owner: "xiaomi",
 	strip: {
 		none: true,
@@ -2185,6 +2183,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libhta_hexagon_runtime",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libhta_hexagon_runtime.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libhvx_interface",
 	owner: "xiaomi",
 	strip: {
@@ -2355,8 +2370,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libmpbase.so_sweet",
-	stem: "libmpbase",
+	name: "libmpbase",
 	owner: "xiaomi",
 	strip: {
 		none: true,
@@ -2972,9 +2986,6 @@ cc_prebuilt_binary {
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/batterysecret"],
 	check_elf_files: false,
-	strip: {
-		none: true,
-	},
 	prefer: true,
 	soc_specific: true,
 }
@@ -2984,9 +2995,6 @@ cc_prebuilt_binary {
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/cnss-daemon"],
 	check_elf_files: false,
-	strip: {
-		none: true,
-	},
 	prefer: true,
 	soc_specific: true,
 }
@@ -2996,21 +3004,15 @@ cc_prebuilt_binary {
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/mi_thermald"],
 	check_elf_files: false,
-	strip: {
-		none: true,
-	},
 	prefer: true,
 	soc_specific: true,
 }
 
 cc_prebuilt_binary {
-	name: "sensors.qti",
+	name: "sensors",
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/sensors.qti"],
 	check_elf_files: false,
-	strip: {
-		none: true,
-	},
 	prefer: true,
 	soc_specific: true,
 }
@@ -3020,9 +3022,6 @@ cc_prebuilt_binary {
 	owner: "xiaomi",
 	srcs: ["proprietary/vendor/bin/thermal-engine"],
 	check_elf_files: false,
-	strip: {
-		none: true,
-	},
 	prefer: true,
 	soc_specific: true,
 }

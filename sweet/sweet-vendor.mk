@@ -400,7 +400,6 @@ PRODUCT_PACKAGES += \
     fingerprint.fpc.sm6150 \
     libFaceGrade \
     libFaceDetectpp-0.5.2 \
-    libMegviiFacepp-0.5.2_vendor \
     libPSNPE \
     libSNPE \
     libVDClearShot \
@@ -438,6 +437,7 @@ PRODUCT_PACKAGES += \
     libdualcam_video_optical_zoom \
     libft2vendor \
     libhta \
+    libhta_hexagon_runtime \
     libhvx_interface \
     libfacedet \
     libmiai_portraitsupernight \
@@ -448,7 +448,7 @@ PRODUCT_PACKAGES += \
     libmialgo_utils \
     libmialgoengine \
     libmibokeh_712 \
-    libmpbase.so_sweet \
+    libmpbase \
     libmulticam_image_optical_zoom \
     libmulticam_video_optical_zoom \
     libnotifyaudiohal \
@@ -487,5 +487,5 @@ PRODUCT_PACKAGES += \
     batterysecret \
     cnss-daemon \
     mi_thermald \
-    sensors.qti \
+    sensors \
     thermal-engine
